@@ -101,9 +101,10 @@ public class BankUI {
             SavingsFrame= new JFrame();
             SavingsFrame.add(SavingsFrame);
             SavingsFrame.add(Savings);
+            savingsFrame.add(colour.green);
             SavingsFrame.setLayout(new FlowLayout(FlowLayout.TRAILING));
             SavingsFrame.setVisible(true);
-            SavingsFrame.setSize(200, 250);
+            SavingsFrame.setSize(300, 350);
 
 
         });
@@ -122,12 +123,13 @@ public class BankUI {
 
             SavingsFrame.setLayout(new FlowLayout(FlowLayout.TRAILING));
             SavingsFrame.setVisible(true);
-            SavingsFrame.setSize(200, 250);
+            SavingsFrame.setSize(250, 300);
 
 
         });
         Withdrawalbutton.addActionListener(e ->{
             WithdrawalFRAME2.setSize(200, 300);
+            withdrawalbutton.add(colour.red);
             WithdrawalFRAME2.setLayout(new FlowLayout(FlowLayout.TRAILING));
             WithdrawalFRAME2.setVisible(true);
         });
@@ -137,6 +139,8 @@ public class BankUI {
        getSaving_account.addActionListener(e -> {
 
        });
+
+        
     }
 }
 
